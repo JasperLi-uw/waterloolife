@@ -1,0 +1,49 @@
+body {
+	background-color: #ededef;
+
+}
+
+div.management-panel {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	height: 80%;
+	background-color: white;
+}
+
+div.left-panel {
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin-left: 3.5%;
+	margin-right: 3%;
+}
+
+div.right-panel {
+	float: left;
+	width: 60%;
+	height: 100%;
+	padding-top: 27px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+div.avatar-container {
+	margin-left: 73px;
+	margin-top: 41px;
+}
+
+#avatar-d1 {
+	width: 200px;
+	height: 260px;
+	border-radius: 90%;
+}
+
+div.lower {
+	margin-top: 40px;
+	text-align: center;
+}
+
+div.user-name {
+	font-size: 30px;
+}

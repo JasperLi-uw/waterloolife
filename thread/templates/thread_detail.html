@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}threads{% endblock %}
+
+{% load static %}
+
+{% block header_extends %}
+	<link rel="stylesheet" type="text/css" href="{% static 'thread.css' %}">
+{% endblock %}
+
+{% block content %}
+	<div class="left-panel">
+			{% for thread_type in thread_types %}
+				<a href="{% url 'threads_with_type' thread_type.pk %}">
+					<div class="thread-type">
+						{{ thread_type.type_name }}
+					</div>
+				</a>
+			{% empty %}
+				not available now
+			{% endfor %}
+	</div>
+	<div class="middle-panel-thread">
+		<div class="upper">
+			<div class="lg-left">
+				$
+			</div>
+			<div class="main-thread">
+				<div class="thread-header">
+					&nbsp @ <a href="#">{{ thread.author }}</a>
+					&nbsp {{ thread.created_time }}
+				</div>
+				<div class="thread-title">
+					{{ thread.title }}
+				</div>
+				<div class="thread-body">
+					{{ thread.content }}
+				</div>
+			</div>
+		</div>
+		<div class="comment-area">
+			<div class="cm-lg-left">
+				$
+			</div>
+			<div class="comment">
+				#
+			</div>
+		</div>
+	</div>
+	<div class="right-panel">
+		
+	</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+body {
+	background-color: #ededef;
+
+}
+
+div.middle-panel {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	height: 80%;
+	background-color: white;
+}

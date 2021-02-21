@@ -1,0 +1,74 @@
+body {
+	background-color: #ededef;
+}
+
+#navbar {
+	background-color: #1F1F1F;
+	min-height: 64px;
+	margin-bottom: 30px;
+}
+
+#logo {
+	height: 64px;
+    width: 190px;
+    margin-left: 52px;
+    line-height: 64px;
+    float: left;
+}
+
+#logo a {
+	color: antiquewhite;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.navbar-blocks {
+	float: left;
+	margin-left: 27px;
+}
+
+.navbar-block {
+	float: left;
+	width: 80px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar-block a {
+	color: #999999;
+	text-decoration: none;
+	transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.navbar-block a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.login-btn {
+	height: 64px;
+	line-height: 64px;
+	float: right;
+	margin-right: 10px;
+}
+
+.reg-btn {
+	height: 64px;
+	line-height: 64px;
+	float: right;
+	margin-right: 5px;
+}
+
+.username {
+	height: 64px;
+	line-height: 64px;
+	float: right;
+	margin-right: 10px;
+	color: white;
+}
+
